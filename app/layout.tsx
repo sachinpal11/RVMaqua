@@ -73,6 +73,9 @@ export const metadata: Metadata = {
       "Bulk custom water bottle packaging in Delhi NCR for cafes, restaurants, offices & events.",
     images: ["/og-image.jpg"],
   },
+  verification: {
+    google: "RPZ_QtajeThtNhEraHKv7n-egeQEvsmZxbcW5gDJY8I",
+  },
 };
 
 export default function RootLayout({
