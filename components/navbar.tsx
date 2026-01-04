@@ -2,15 +2,16 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar(): React.ReactElement {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <header className="w-full border-b sticky top-0 border-gray-300 bg-white">
+    <header className="w-full border-b sticky top-0  border-gray-300 bg-blue-800">
       <nav className="relative mx-auto flex max-w-7xl items-center px-4 py-6">
         {/* Logo */}
-        <Link href="/" className="text-xl font-heading font-bold text-gray-900">
+        <Link href="/" className="text-xl font-heading font-bold text-white">
           RVMAqua
         </Link>
 
@@ -32,9 +33,7 @@ export default function Navbar(): React.ReactElement {
           className="ml-auto flex items-center md:hidden"
         >
           <span className="relative h-6 w-6">
-            <span className="absolute left-0 top-1 h-0.5 w-full bg-black" />
-            <span className="absolute left-0 top-1/2 h-0.5 w-full bg-black" />
-            <span className="absolute left-0 bottom-1 h-0.5 w-full bg-black" />
+            <Menu className="text-white" />
           </span>
         </button>
       </nav>
@@ -49,18 +48,18 @@ export default function Navbar(): React.ReactElement {
 
       {/* Right Sidebar */}
       <aside
-        className={`fixed right-0 top-0 z-50 h-full w-72 bg-white shadow-lg transition-transform duration-300 ${
+        className={`fixed right-0 top-0 z-50 h-full w-72 bg-blue-800 shadow-lg transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between border-b px-4 py-4">
-          <span className="text-lg font-heading font-bold">RVMAqua</span>
+        <div className="flex items-center justify-between px-4 py-4">
+          <span className="text-lg text-white font-heading font-bold"></span>
           <button
             aria-label="Close menu"
             onClick={() => setOpen(false)}
-            className="text-2xl leading-none"
+            className="text-2xl text-white leading-none"
           >
-            ×
+            <X />
           </button>
         </div>
 
@@ -91,7 +90,7 @@ function NavLinks({
   onLinkClick,
 }: NavLinksProps): React.ReactElement {
   const baseClass =
-    "font-body text-gray-700 font-medium hover:text-gray-900 transition-colors";
+    "font-body text-white font-medium hover:text-neutral-200 transition-colors";
 
   return (
     <>
