@@ -83,8 +83,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${montserrat.variable}`}
+        className={`${poppins.variable} ${montserrat.variable} relative bg-blue-100`}
         suppressHydrationWarning
+        suppressContentEditableWarning
       >
         <Navbar />
         {children}

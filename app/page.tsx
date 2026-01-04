@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/heroSection";
+import WhoWeServe from "@/components/WhoWeServe";
 
 export const metadata: Metadata = {
   title: "Custom Branded Water Bottles in Delhi | RVMAqua",
@@ -11,6 +12,7 @@ export default function Page() {
   return (
     <main>
       <HeroSection />
+      <WhoWeServe />
     </main>
   );
 }
