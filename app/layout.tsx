@@ -18,7 +18,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.rvmaqua.in"),
+  metadataBase: new URL("https://www.rvmaqua.vercel.app"),
 
   title: {
     default: "Custom Branded Water Bottles in Delhi | RVMAqua",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.rvmaqua.in",
+    url: "https://www.rvmaqua.vercel.app",
     siteName: "RVMAqua",
     title: "Custom Branded Water Bottles in Delhi | RVMAqua",
     description:
